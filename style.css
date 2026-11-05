@@ -1,13 +1,39 @@
 body {
+    background-color: rgb(2, 32, 99);
+    color: white;
+    font-family: "Nunito", sans-serif;
+}
+
+.headerMain {
     background-color: black;
-}
 
-h1 {
-    color: white;
-    text-align: center;
+    width: 1280px;
+    height: 340px;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
 }
-
-p {
-    color: white;
-    text-align: center;
-}
+    .headerH1Title {
+        line-height: 1;
+        margin: 8px 0 4px;
+        text-align: center;
+    }
+    .headerExplanation {
+        /*rem means "multiplies of the pages base font size", the base is 16px by default,so 1.25rem = 1.25 * 16 = 20, use this as it
+        scales with the users browser font settings whereas px is fixed*/
+        font-size: 1.25rem;
+        font-weight: bold;
+        margin: 4px 0;
+        text-align: center;
+    }
+    .headerScroll {
+        flex: 1;
+        min-height: 0;
+        overflow-y: auto;
+        margin: 10px;
+        text-align: left;
+    }
+    .headerScroll h2,
+    .headerScroll ul {
+        margin: 0;
+    }
