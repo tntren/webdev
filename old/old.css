@@ -1,0 +1,70 @@
+:root {
+    --page: hsl(222, 60%, 12%);
+    --header: hsl(222, 50%, 7%);
+    --panel: hsl(218, 45%, 20%);
+    --button: hsl(214, 60%, 38%);
+    --accent: hsl(200, 90%, 62%);
+    --text: hsl(210, 40%, 96%);
+}
+
+body {
+    background-color: var(--page);
+    color: var(--text);
+    font-family: "Nunito", sans-serif;
+}
+
+.headerMain {
+    background-color: var(--header);
+
+    width: 1280px;
+    height: 380px;
+    margin: 10px auto;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+    .headerH1Title {
+        line-height: 1;
+        margin: 8px 0 4px;
+        text-align: center;
+    }
+    .headerExplanation {
+        /*rem means "multiplies of the pages base font size", the base is 16px by default,so 1.25rem = 1.25 * 16 = 20, use this as it
+        scales with the users browser font settings whereas px is fixed*/
+        font-size: 1.25rem;
+        font-weight: bold;
+        margin: 4px 0;
+        text-align: center;
+    }
+    .headerScroll {
+        background-color: var(--panel);
+        
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        
+        margin-top: 5px;
+        scrollbar-width: none;
+        flex: 1;
+        min-height: 0;
+        overflow-y: auto;
+        text-align: left;
+    }
+        .headerScroll h2 {
+            margin: 5px;
+            font-size: 2.0rem;
+            text-align: center;
+        }
+        .headerScrollArticles {
+            margin: 5px;
+        }
+            .headerScroll h3 {
+                margin: 5px;
+                color: var(--accent);
+            }
+            .headerScroll ul {
+                margin: 5px;
+            }
+            .headerScroll li {
+                max-width: 100ch;
+            }

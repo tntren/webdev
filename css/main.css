@@ -1,0 +1,22 @@
+.mainInformation {}
+
+    .mainInformation h2 { /* dev log */
+        margin: 0.75rem;
+        font-size: 1.75rem;
+    }
+    .mainDates {
+        border: 2px dashed var(--border);
+        padding: 0.5rem 1rem;
+        margin: 1rem;
+
+        text-align: left;
+    }
+    .mainDates ul {
+        line-height: 1.5rem;
+    }
+    .mainDates h3 {
+        margin: 0.5rem;
+    }
+    .mainDates ul ul {
+        font-style: italic;
+    }

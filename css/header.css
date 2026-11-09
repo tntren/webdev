@@ -1,0 +1,58 @@
+.headerContent {
+    background-color: var(--header-body);
+
+    min-height: 260px;
+    border-radius: 8px 8px 0 0;
+    border-bottom: 4px solid var(--border);
+}
+
+    header h1 {
+        background-color: var(--header);
+        border-radius: 3px 3px 0 0;
+
+        margin: 0;
+        padding: 0.75rem 0;
+    }
+    header p,
+    header h3 {
+        margin: 0;
+    }
+    header h2 {
+        margin: 0;
+        padding: 0.75rem;
+    }
+
+    .headerNav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.75rem;
+        background-color: var(--header);
+        
+        margin: 0;
+        padding: 0 0 0.5rem;
+        border-bottom: 4px solid var(--border);
+    }
+        .headerButtons {
+            background: none;
+            border: none;
+            border-radius: 0;
+            color: var(--text);
+
+            font-family: inherit;
+            font-weight: bold;
+            font-size: 1rem;
+            letter-spacing: 0.05rem;
+            
+            min-width: 100px;
+            padding: 0.125rem 1rem;
+        }
+        .headerButtons:hover {
+            color: var(--heading);
+        }
+        .headerButtons.active {
+            color: var(--heading);
+
+            text-decoration: underline;
+            text-underline-offset: 2px;
+        }
