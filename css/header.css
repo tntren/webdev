@@ -2,24 +2,13 @@
     background-color: var(--header-body);
 
     min-height: 260px;
-    border-radius: 8px 8px 0 0;
     border-bottom: 4px solid var(--border);
-}
 
-    header h1 {
+    h1 {
         background-color: var(--header);
-        border-radius: 3px 3px 0 0;
 
         margin: 0;
         padding: 0.75rem 0;
-    }
-    header p,
-    header h3 {
-        margin: 0;
-    }
-    header h2 {
-        margin: 0;
-        padding: 0.75rem;
     }
 
     .headerNav {
@@ -32,7 +21,7 @@
         margin: 0;
         padding: 0 0 0.5rem;
         border-bottom: 4px solid var(--border);
-    }
+
         .headerButtons {
             background: none;
             border: none;
@@ -46,13 +35,28 @@
             
             min-width: 100px;
             padding: 0.125rem 1rem;
-        }
-        .headerButtons:hover {
-            color: var(--heading);
-        }
-        .headerButtons.active {
-            color: var(--heading);
 
-            text-decoration: underline;
-            text-underline-offset: 2px;
+            &:hover {
+                color: var(--heading);
+            }
+            &.active {
+                color: var(--heading);
+
+                text-decoration: underline;
+                text-underline-offset: 2px;
+            }
+            &:focus-visible { color: var(--heading); }
         }
+    }
+
+    .headerInformation {
+        h2 {
+            margin: 0;
+            padding: 0.75rem;
+        }
+        h3,
+        p {
+            margin: 0;
+        }
+    }
+}

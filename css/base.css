@@ -34,18 +34,18 @@ body {
 
     font-family: "Nunito", Tahoma, sans-serif;
     margin: 2rem;
-}
 
-.mainView {
-    background-color: var(--panel);
+    .mainView {
+        background-color: var(--panel);
 
-    overflow: hidden;
-    max-width: 1280px;
-    width: 100%;
-    min-height: 720px;
-    margin: 1rem auto;
+        overflow: hidden;
+        max-width: 1280px;
+        width: 100%;
+        min-height: 720px;
+        margin: 1rem auto;
 
-    border-radius: 0.5rem;
-    border: 6px double var(--border);
-    text-align: center;
+        border-radius: 0.5rem;
+        border: 6px double var(--border);
+        text-align: center;
+    }
 }
