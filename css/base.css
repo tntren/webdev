@@ -13,6 +13,8 @@
     box-sizing: border-box;
 }
 
+.hidden { display: none; }
+
 a { color: var(--hyperlink); }
 
 h1, h2, h3 {
