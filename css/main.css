@@ -1,12 +1,12 @@
 .mainInformation {
     h2 { /* dev log */
-        margin: 0.75rem;
+        margin: 0.75rem var(--inset);
         font-size: 1.75rem;
     }
     .entry {
         border: 2px dashed var(--border);
         padding: 0.5rem 1rem;
-        margin: 1rem;
+        margin: 1rem var(--inset);
 
         text-align: left;
 

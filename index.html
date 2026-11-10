@@ -7,42 +7,88 @@
         <meta name="description" content="tntrent's Projects: in browser game utilities like a small Lua compiler, and links to find me online.">
         <link rel="icon" href="./media/images/favicon.png">
         <link rel="stylesheet" href="./css/base.css">
-        <link rel="stylesheet" href="./css/main.css">
         <link rel="stylesheet" href="./css/header.css">
+        <link rel="stylesheet" href="./css/main.css">
+        <link rel="stylesheet" href="./css/footer.css"> <!-- separated a singular large CSS file into multiple for readability -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Lora:wght@500;700&display=swap" rel="stylesheet">
-        <script src="./js/script.js" defer></script>
+        <script src="./js/script.js" defer></script> <!-- for the buttons -->
     </head>
     <body>
         <div class="mainView">
             <header class="headerContent">
                 <h1>Projects Website</h1>
                 <nav class="headerNav">
-                    <button class="headerButtons" type="button" data-page="info">information</button>
+                    <button class="headerButtons active" type="button" data-page="info">information</button>
                     <button class="headerButtons" type="button" data-page="projects">projects</button>
-                    <button class="headerButtons" type="button">hello2</button>
-                    <button class="headerButtons" type="button">hello3</button>
                     <button class="headerButtons" type="button" data-page="socials">socials</button>
                 </nav>
-                <section class="headerInformation panel" data-page="info">
+                <section class="headerInformation panel headerPanel" data-page="info">
                     <h2>Information</h2>
                     <h3>What is this website? What is it for?</h3>
                     <p>This website is to show projects I'm working on, and utilities in browser for games, an example being a small Lua compiler.</p>
-                    <p>You can use this page by <strong>clicking the buttons above,</strong> and to see where I am online, click <a href="#socials" class="tab" data-page="socials">me.</a></p>
+                    <p>You can use this page by <strong>clicking the buttons above,</strong> and to see where I am online, click <a href="#socials" class="pageLink" data-page="socials">me.</a></p>
                 </section>
-                <section class="headerProjects panel hidden" data-page="projects">
+                <section class="headerProjects panel headerPanel hidden" data-page="projects">
                     <h2>Projects/Utilities</h2>
                     <h3>Finished projects / utilities or ones I'm working on.</h3>
                 </section>
-                <section class="headerSocials panel hidden" data-page="socials">
+                <section class="headerSocials panel headerPanel hidden" data-page="socials">
                     <h2>Socials</h2>
                     <h3>Where to find me online / how to contact me.</h3>
                 </section>
             </header>
-            <main class="mainContent">
+            <main>
                 <section class="mainInformation panel" data-page="info">
                     <h2>Dev Log</h2>
+                    <article class="entry">
+                        <h3><time datetime="2026-11-10">2026-11-10</time></h3>
+                        <ul>
+                            <li>polish and cleaned up the JS
+                                <ul>
+                                    <li>made hyperlinks that link to another page work</li>
+                                    <li>formatted the JS into a function, then one loop handles hyperlinks and buttons</li>
+                                </ul>
+                            </li>
+                            <li>small additions / tweaks
+                                <ul>
+                                    <li>added stuff to socials page</li>
+                                    <li>made the navButtons be a box that fits the characters, no extra space (also sized up the gap)</li>
+                                    <li>active tab is underlined and highlighted, holding click also highlights</li>
+                                </ul>
+                            </li>
+                            <li>design change AGAIN
+                                <ul>
+                                    <li>i typoed the div mainView on purpose to see what it would look like, it looked really good except for a few things</li>
+                                    <li>i thought it looked way better, so i made another styled class called mainViewa and styled it from there, looks much better now and i kept this as a permanent change</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </article>
+                    <article class="entry">
+                        <h3><time datetime="2026-11-09">2026-11-09</time></h3>
+                        <ul>
+                            <li>added JS for switching tabs
+                                <ul>
+                                    <li>bare minimum JS that swaps tabs (also added keyboard support, aka TAB key also highlights the button)</li>
+                                    <li>started the projects section</li>
+                                </ul>
+                            </li>
+                            <li>cleaned up the CSS
+                                <ul>
+                                    <li>converted to CSS nesting for readability</li>
+                                    <li>removed redundant rules</li>
+                                </ul>
+                            </li>
+                            <li>added SEO and polish
+                                <ul>
+                                    <li>meta description and favicon</li>
+                                    <li>newest dev log entries now go on top</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </article>
                     <article class="entry">
                         <h3><time datetime="2026-11-08">2026-11-08</time></h3>
                         <ul>
@@ -70,5 +116,10 @@
                 </section>
             </main>
         </div>
+        <footer class="mainFooter">
+            <p>Made by hand, for my Web Dev class.</p>
+            <p>HTML, CSS, JS. Nunito and Lora.</p>
+            <p>2026-11-02 - 2026-11-13.</p>
+        </footer>
     </body>
 </html>

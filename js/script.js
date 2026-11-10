@@ -1,19 +1,24 @@
-const headerButtons = document.querySelectorAll(".headerButtons") // document is the root of everything, querySelectorAll checks everything class headerButtons
+const triggers = document.querySelectorAll(".headerButtons, .pageLink")
+const buttons = document.querySelectorAll(".headerButtons")
 const panels = document.querySelectorAll(".panel")
 
 function changePages(page) {
-    for (const panel of panels)
-        if (panel.dataset.page === page) {
-            panel.classList.remove("hidden")
-        }
-        else {
-            panel.classList.add("hidden")
-        }
+    if (!page) return
+
+    for (const panel of panels) {
+        panel.classList.toggle("hidden", panel.dataset.page !== page)
+    }
+
+    for (const button of buttons) {
+        const isActive = button.dataset.page === page
+        button.classList.toggle("active", isActive)
+        button.setAttribute("aria-current", isActive ? "page" : "false")
+    }
 }
 
-for (const button of headerButtons) { // for (for each thing in this next block) set button = to the first, then the next and so on of the buttons in headerButtons
-    button.addEventListener("click", function() {
-        console.log(button.dataset.page)
-        changePages(button.dataset.page)
-    });
+for (const trigger of triggers) {
+    trigger.addEventListener("click", event => {
+        event.preventDefault()
+        changePages(trigger.dataset.page)
+    })
 }
