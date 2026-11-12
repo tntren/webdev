@@ -8,8 +8,9 @@
     --heading: hsl(40, 55%, 72%);
     --hyperlink: hsl(205, 60%, 70%);
 
-    --site-width: 1280px;
+    --site-width: 1620px;
     --inset: 1.5rem;
+    --panel-top: 3.5rem;
 }
 
 *, *::before, *::after {
@@ -31,11 +32,15 @@ h1, h2, h3 {
     color: var(--heading);
 }
 
-button {
-    cursor: pointer;
+a, button {
+    cursor: -webkit-image-set(url("../media/images/link.png") 3x) 8.3 0, pointer;
+    cursor: image-set(url("../media/images/link.png") 3x) 8.3 0, pointer;
 }
 
 body {
+    cursor: -webkit-image-set(url("../media/images/pointer.png") 2x) 0 0, auto;
+    cursor: image-set(url("../media/images/pointer.png") 2x) 0 0, auto;
+
     background-image: repeating-linear-gradient(
         180deg, transparent 0 23px, hsla(0, 0%, 100%, 0.03) 23px 24px
     );
@@ -47,6 +52,7 @@ body {
     margin: 2rem;
 
     .mainView {
-        margin: 1rem 0;
+        margin: 1rem auto;
+        max-width: var(--site-width);
     }
 }

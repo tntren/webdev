@@ -18,6 +18,7 @@
     <body>
         <div class="mainView">
             <header class="headerContent">
+                <div class="headerBanner"></div>
                 <h1>Projects Website</h1>
                 <nav class="headerNav">
                     <button class="headerButtons active" type="button" data-page="info">information</button>
@@ -29,6 +30,7 @@
                     <h3>What is this website? What is it for?</h3>
                     <p>This website is to show projects I'm working on, and utilities in browser for games, an example being a small Lua compiler.</p>
                     <p>You can use this page by <strong>clicking the buttons above,</strong> and to see where I am online, click <a href="#socials" class="pageLink" data-page="socials">me.</a></p>
+                    <p>and the cursor you are using right now: <a href="./media/images/cannyCat.png" target="_blank" rel="noopener noreferrer"><img src="./media/images/cannyCat.png" alt="picture of the Canny Cat" class="cannyCatImg"></a>
                 </section>
                 <section class="headerProjects panel headerPanel hidden" data-page="projects">
                     <h2>Projects/Utilities</h2>
@@ -41,7 +43,7 @@
             </header>
             <main>
                 <section class="mainInformation panel" data-page="info">
-                    <h2>Dev Log</h2>
+                    <h2 id="devLog">Dev Log</h2>
                     <article class="entry">
                         <h3><time datetime="2026-11-10">2026-11-10</time></h3>
                         <ul>
@@ -114,8 +116,32 @@
                         </ul>
                     </article>
                 </section>
+                <section class="mainProjects panel hidden" data-page="projects">
+                    <nav class="projectsNav">
+                        <a href="#imgaudToLua" class="projectButtons">Image/Audio to Lua</a>
+                    </nav>
+                    <article class="project" id="imgaudToLua">
+                        <p>Later on, i'll make the compiler here. The compiler will not be a standard compiler, its to convert video (or image) / audio into "beeps" and raw pixel data for a computer in a game to understand, and that language happens to be Lua.</p>
+                    </article>
+                </section>
+                <section class="mainSocials panel hidden" data-page="socials">
+                    <h3>Find me here</h3>
+                    <ul class="socialsList">
+                        <li class="social">
+                            <h3>GitHub</h3>
+                            <p>Code for my projects are usually on here</p>
+                            <a href="https://github.com/tntren" target="_blank" rel="noopener noreferrer">https://github.com/tntren</a>
+                        </li>
+                        <li class="social">
+                            <h3>Discord</h3>
+                            <p>Probably the easiest way to contact me</p>
+                            <p>Username: tntrent<br>(255122989954236416)</p>
+                        </li>
+                    </ul>
+                </section>
             </main>
         </div>
+        <hr class="footerDivider">
         <footer class="mainFooter">
             <p>Made by hand, for my Web Dev class.</p>
             <p>HTML, CSS, JS. Nunito and Lora.</p>
