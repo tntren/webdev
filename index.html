@@ -29,21 +29,48 @@
                     <h2>Information</h2>
                     <h3>What is this website? What is it for?</h3>
                     <p>This website is to show projects I'm working on, and utilities in browser for games, an example being a small Lua compiler.</p>
-                    <p>You can use this page by <strong>clicking the buttons above,</strong> and to see where I am online, click <a href="#socials" class="pageLink" data-page="socials">me.</a></p>
-                    <p>and the cursor you are using right now: <a href="./media/images/cannyCat.png" target="_blank" rel="noopener noreferrer"><img src="./media/images/cannyCat.png" alt="picture of the Canny Cat" class="cannyCatImg"></a>
+                    <p>You can use this page by <strong>clicking the buttons below,</strong> and to see where I am online, click <a href="#socials" class="pageLink" data-page="socials">me.</a></p>
                 </section>
                 <section class="headerProjects panel headerPanel hidden" data-page="projects">
                     <h2>Projects/Utilities</h2>
                     <h3>Finished projects / utilities or ones I'm working on.</h3>
+                    <p>Here you can see current projects/utilities that I've either finished or I'm currently working on.</p>
+                    <p>You can use this page by <strong>clicking the buttons next to the Projects title</strong> which will scroll you to the selected project.</p>
                 </section>
                 <section class="headerSocials panel headerPanel hidden" data-page="socials">
                     <h2>Socials</h2>
-                    <h3>Where to find me online / how to contact me.</h3>
+                    <h3>Where to find me online / contacts.</h3>
+                    <p>Here you can find out how to contact me or to see what I do online.</p>
+                    <p>You can use this page just by <strong>clicking a link</strong> or <strong>copying my username.</strong></p>
                 </section>
             </header>
             <main>
                 <section class="mainInformation panel" data-page="info">
                     <h2 id="devLog">Dev Log</h2>
+                    <article class="entry">
+                        <h3><time datetime="2026-11-12">2026-11-12</time></h3>
+                        <ul>
+                            <li>new tabs
+                                <ul>
+                                    <li>projects page has content now</li>
+                                    <li>socials tab has content now</li>
+                                </ul>
+                            </li>
+                            <li>new images
+                                <ul>
+                                    <li>added a banner, dont know if its gonna be permanent</li>
+                                    <li>added canny cat</li>
+                                    <li>made the cursors canny</li>
+                                </ul>
+                            </li>
+                            <li>probably final dev log for a while
+                                <ul>
+                                    <li>last day before capstone presentation in my class, so this was kinda a last check everything is done and polished run</li>
+                                    <li>removed jumps in space, finishing touches</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </article>
                     <article class="entry">
                         <h3><time datetime="2026-11-10">2026-11-10</time></h3>
                         <ul>
@@ -117,9 +144,12 @@
                     </article>
                 </section>
                 <section class="mainProjects panel hidden" data-page="projects">
-                    <nav class="projectsNav">
-                        <a href="#imgaudToLua" class="projectButtons">Image/Audio to Lua</a>
-                    </nav>
+                    <header class="projectsTop">
+                        <h3>Projects</h3>
+                        <nav class="projectsNav">
+                            <a href="#imgaudToLua" class="projectButtons">Image/Audio to Lua</a>
+                        </nav>
+                    </header>
                     <article class="project" id="imgaudToLua">
                         <p>Later on, i'll make the compiler here. The compiler will not be a standard compiler, its to convert video (or image) / audio into "beeps" and raw pixel data for a computer in a game to understand, and that language happens to be Lua.</p>
                     </article>
@@ -146,6 +176,7 @@
             <p>Made by hand, for my Web Dev class.</p>
             <p>HTML, CSS, JS. Nunito and Lora.</p>
             <p>2026-11-02 - 2026-11-13.</p>
+            <p class="catNote">and the cursor you are using right now: <a href="./media/images/cannyCat.png" target="_blank"><img src="./media/images/cannyCat.png" alt="picture of the Canny Cat." class="cannyCatImg"></a></p>
         </footer>
     </body>
 </html>

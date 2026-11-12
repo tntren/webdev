@@ -74,10 +74,5 @@
             margin: 0;
             padding: 0 var(--inset);
         }
-        .cannyCatImg {
-            height: 2rem;
-            width: 2rem;
-            vertical-align: middle;
-        }
     }
 }

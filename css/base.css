@@ -5,6 +5,7 @@
     /* --surface: hsl(218, 45%, 20%); */
     --border: hsl(210, 35%, 45%);
     --text: hsl(40, 30%, 90%);
+    --footer-text: hsl(40 30% 90% / 0.7);
     --heading: hsl(40, 55%, 72%);
     --hyperlink: hsl(205, 60%, 70%);
 

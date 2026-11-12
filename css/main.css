@@ -24,13 +24,26 @@
 
 .mainProjects {
     text-align: center;
-    .projectsNav {
+    .projectsTop {
+        display: flex;
+        flex-wrap: wrap;
+
+        align-items: baseline;
+        align-content: center;
+        
+        gap: 0 1.75rem;
         height: var(--panel-top);
         margin: 0 var(--inset);
+        h3 {
+            margin: 0;
+            font-size: 1.75rem;
+        }
+    }
+    .projectsNav {
         display: flex;
         align-items: center;
-        justify-content: center;
         gap: 1.75rem;
+        margin: 0;
 
         .projectButtons {
             display: inline-block;
@@ -42,7 +55,7 @@
             font-family: inherit;
             font-weight: bold;
             text-decoration: none;
-            font-size: 1.25rem;
+            font-size: 1rem;
             letter-spacing: 0.05rem;
     
             padding: 0;
