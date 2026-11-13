@@ -3,6 +3,7 @@ const buttons = document.querySelectorAll(".headerButtons")
 const panels = document.querySelectorAll(".panel")
 const projectLinks = document.querySelectorAll(".projectButtons")
 
+// shows the panel whose data-page matches, hides the rest, and marks the matching nav button active
 function changePages(page) {
     if (!page) return
 
@@ -17,6 +18,7 @@ function changePages(page) {
     }
 }
 
+// one handler for both the nav buttons and in-page links like "me"
 for (const trigger of triggers) {
     trigger.addEventListener("click", event => {
         event.preventDefault()
@@ -24,6 +26,7 @@ for (const trigger of triggers) {
     })
 }
 
+// project links preventDefault stops the #hash from being added to the URL, then the "selected" class highlights the project
 for (const link of projectLinks) {
     link.addEventListener("click", event => {
         event.preventDefault()

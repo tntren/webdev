@@ -1,6 +1,7 @@
 .headerContent {
     display: grid;
     border-bottom: 2px solid;
+    /* border-image paints a gradient line that fades out, the "1" is the slice size */
     border-image: linear-gradient(90deg, var(--border), transparent) 1;
 
     h1 {
@@ -9,6 +10,7 @@
     }
 
     .headerBanner {
+        /* 100vw is the whole screen width, the negative margin pulls it out of the centered container */
         width: 100vw;
         margin-left: calc(50% - 50vw);
         min-height: 60px;
@@ -54,12 +56,13 @@
         }
     }
     .headerPanel {
-        /* all panels share ong rid cell, hidden ones keep their space (visibility) so the page doesn't jump betwen tabs */
+        /* all panels share one grid cell, (row 3), so the nav (placed after them in the HTML) ends up visually below them.
+           hidden panels use visibility instead of display:none so they keep their space and the page doesn't jump betwen tabs */
         grid-area: 3 / 1;
         margin: 0 0 1rem;
 
         &.hidden {
-            display: block !important;
+            display: block !important; /* overrides the global .hidden rule on purpose */
             visibility: hidden;
         }
 

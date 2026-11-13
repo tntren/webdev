@@ -4,6 +4,7 @@
 
     border: none;
     border-top: 2px solid;
+    /* border-image paints a gradient line that fades out, the "1" is the slice size */
     border-image: linear-gradient(90deg, var(--border), transparent) 1;
 }
 

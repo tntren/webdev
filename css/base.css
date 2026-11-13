@@ -19,13 +19,13 @@
 }
 
 html {
-    overflow-y: scroll;
-    overflow-x: clip;
+    overflow-y: scroll; /* always show the scroll bar so the page doesn't shift between tabs */
+    overflow-x: clip; /* stops the full width banner from causing a sideways scrollbar*/
     scrollbar-width: thin;
     scrollbar-color: var(--border) var(--header);
 }
 
-.hidden { display: none !important; }
+.hidden { display: none !important; } /* JS toggles this class to hide inactive tabs */
 
 a { color: var(--hyperlink); }
 
@@ -34,6 +34,7 @@ h1, h2, h3 {
     color: var(--heading);
 }
 
+/* custom cursors, image-set picks the scale, the two numbers are the click point, the last value is the fallback */
 a, button {
     cursor: -webkit-image-set(url("../media/images/link.png") 3x) 8.3 0, pointer;
     cursor: image-set(url("../media/images/link.png") 3x) 8.3 0, pointer;

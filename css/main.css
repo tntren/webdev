@@ -97,6 +97,7 @@
     }
 }
 
+/* the .selected class is added by script.js when a project link is clicked */
 #imgaudToLua.selected {
     border-style: solid;
 }
