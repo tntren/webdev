@@ -30,7 +30,7 @@
                     <h2>Projects/Utilities</h2>
                     <h3>Finished projects / utilities or ones I'm working on.</h3>
                     <p>Here you can see current projects/utilities that I've either finished or I'm currently working on.</p>
-                    <p>You can use this page by <strong>clicking the buttons next to the Projects title</strong> which will scroll you to the selected project.</p>
+                    <p>You can use this page by <strong>clicking the buttons next to the Projects title</strong> which will swap the view to the project.</p>
                 </section>
                 <section class="headerSocials panel headerPanel hidden" data-page="socials">
                     <h2>Socials</h2>
@@ -144,12 +144,42 @@
                     <header class="projectsTop">
                         <h2 class="panelTitle">Projects</h2>
                         <nav class="projectsNav" aria-label="Projects">
-                            <a href="#imgaudToLua" class="projectButtons">Image/Audio to Lua</a>
+                            <a href="#TI84Wifi" class="projectButtons active">TI-84 Link Port wifi</a>
+                            <a href="#imgaudToLua" class="projectButtons">Image/Audio to Commodiesel (Lua)</a>
                         </nav>
                     </header>
-                    <article class="project" id="imgaudToLua">
-                        <p>Planned: upload a file, preview the output, and copy the generated Lua. (this will convert audio or images/videos into raw "beeps" or pixel data for the custom Lua computer to understand.)</p>
-                    </article>
+                    <div class="projectView">
+                        <article class="project" id="TI84Wifi">
+                            <h3>TI-84 connected to wifi</h3>
+                            <p>Before I start, I want to say that I got my inspiration for this project from <a href="https://www.youtube.com/@ChromaLock" target="_blank" rel="noopener noreferrer">ChromaLock</a>
+                                and <a href="https://github.com/KermMartian" target="_blank" rel="noopener noreferrer">KermMartian's</a> <a href="https://github.com/KermMartian/ArTICL" target="_blank" rel="noopener noreferrer">ArTICL.</a>
+                                I also made this project entirely with <strong>AI.</strong> I mainly used Claude, and I did this as I didn't know C/C++ and wanted to learn more.
+                            </p>
+                            <p>This project was to connect my TI-84 to Wifi using the Link Port. In short I wired a ESP32 to the Link Port internally to the TI-84, and had
+                                code on the ESP32 to communicate to the calculator pretending to be another calculator. 
+                            </p>
+                            <p>I used <a href="https://github.com/KermMartian/ArTICL" target="_blank" rel="noopener noreferrer">ArTICL</a> library, and slightly modified it
+                                so it would work in my case. It is a library made by
+                                <a href="https://github.com/KermMartian" target="_blank" rel="noopener noreferrer">KermMartian</a>
+                                and the library is to connect your own hardware (an ESP32) to the calculator.
+                            </p>
+                            <p>I then went on to making sure everything was solid and working, and connected the calculator to my NAS at home, where I could retrieve files.
+                                For example, if the calculator died and I had lost my stuff, I could just fetch it from the drive. I made a program for this on the calculator
+                                that is a mini file browser, and after doing this I created my own app flashing library, which hasn't been made before as it is much more
+                                difficult than making the ArTICL library. I give all credit of this project to
+                                <a href="https://www.youtube.com/@ChromaLock" target="_blank" rel="noopener noreferrer">ChromaLock</a>,
+                                <a href="https://github.com/KermMartian" target="_blank" rel="noopener noreferrer">KermMartian</a>,
+                                and AI. I understood everything in this project, yet I used AI the entire time. It was still a learning experience, and I know much more now
+                                mainly because of those people. (I like to credit AI less. Yes, without it this would have taken much longer, but I wouldn't have been able to
+                                do it without the inspiration of ChromaLock and KermMartian.)
+                            </p>
+                            <p>Link to the repo <a href="https://github.com/tntren/TI84-Flashing" target="_blank" rel="noopener noreferrer">here.</a></p>
+                        </article>
+                        <article class="project hidden" id="imgaudToLua">
+                            <h3>Image/Audio to Commodiesel (Lua).</h3>
+                            <p>Planned: upload a file, preview the output, and copy the generated Lua. (this will convert audio or images/videos into raw "beeps" or pixel data for the custom Lua computer to understand.)</p>
+                        </article>
+                    </div>
                 </section>
                 <section class="mainSocials panel hidden" data-page="socials">
                     <h2 class="panelTitle">Find me here</h2>

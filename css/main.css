@@ -55,7 +55,7 @@
             &:hover {
                 color: var(--heading);
             }
-            &:active {
+            &:active, &.active {
                 color: var(--heading);
 
                 text-decoration: underline;
@@ -64,21 +64,27 @@
             &:focus-visible { color: var(--heading); }
         }
     }
-    .project {
-        border: 2px dashed var(--border);
-        padding: 0.5rem 1rem;
-        margin: 1rem var(--inset);
+    .projectView {
+        .project {
+            border: 2px dashed var(--border);
+            padding: 0.5rem 1rem;
+            margin: 1rem var(--inset);
+    
+            text-align: left;
 
-        text-align: left;
-
-        p {
-            max-width: 140ch;
+            h3 {
+                margin: 5px 0;
+                font-size: 1.25rem;
+            }
+            h4 {
+                margin: 5px 0;
+                font-size: 1rem;
+                max-width: 140ch;
+            }
+            p {
+                max-width: 140ch;
+            }
         }
-    }
-
-    /* the .selected class is added by script.js when a project link is clicked */
-    #imgaudToLua.selected {
-        border-style: solid;
     }
 }
 
