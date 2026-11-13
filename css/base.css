@@ -19,8 +19,8 @@
 }
 
 html {
-    cursor: -webkit-image-set(url("../media/images/pointer.png") 3x) 0 0, auto;
-    cursor: image-set(url("../media/images/pointer.png") 3x) 0 0, auto;
+    cursor: -webkit-image-set(url("../media/images/pointer.png") 2x) 0 0, auto;
+    cursor: image-set(url("../media/images/pointer.png") 2x) 0 0, auto;
 
     overflow-y: scroll; /* always show the scroll bar so the page doesn't shift between tabs */
     overflow-x: clip; /* stops the full width banner from causing a sideways scrollbar*/
