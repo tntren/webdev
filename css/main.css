@@ -43,22 +43,21 @@
             border: none;
             border-radius: 0;
             color: var(--text);
-    
+
             font-family: inherit;
             font-weight: bold;
             text-decoration: none;
             font-size: 1rem;
             letter-spacing: 0.05rem;
-    
+
             padding: 0;
-    
+
             &:hover {
                 color: var(--heading);
             }
-            &.active,
             &:active {
                 color: var(--heading);
-    
+
                 text-decoration: underline;
                 text-underline-offset: 2px;
             }
@@ -75,6 +74,11 @@
         p {
             max-width: 140ch;
         }
+    }
+
+    /* the .selected class is added by script.js when a project link is clicked */
+    #imgaudToLua.selected {
+        border-style: solid;
     }
 }
 
@@ -95,9 +99,4 @@
         p { margin: 0 0 0.5rem; }
         h3 { margin: 0.5rem 0; }
     }
-}
-
-/* the .selected class is added by script.js when a project link is clicked */
-#imgaudToLua.selected {
-    border-style: solid;
 }
