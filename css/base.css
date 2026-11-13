@@ -44,9 +44,6 @@ a, button {
 }
 
 body {
-    cursor: -webkit-image-set(url("../media/images/pointer.png") 2x) 0 0, auto;
-    cursor: image-set(url("../media/images/pointer.png") 2x) 0 0, auto;
-
     background-image: repeating-linear-gradient(
         180deg, transparent 0 23px, hsla(0, 0%, 100%, 0.03) 23px 24px
     );
