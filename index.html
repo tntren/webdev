@@ -20,11 +20,6 @@
             <header class="headerContent">
                 <div class="headerBanner"></div>
                 <h1>Projects Website</h1>
-                <nav class="headerNav">
-                    <button class="headerButtons active" type="button" data-page="info">information</button>
-                    <button class="headerButtons" type="button" data-page="projects">projects</button>
-                    <button class="headerButtons" type="button" data-page="socials">socials</button>
-                </nav>
                 <section class="headerInformation panel headerPanel" data-page="info">
                     <h2>Information</h2>
                     <h3>What is this website? What is it for?</h3>
@@ -43,30 +38,32 @@
                     <p>Here you can find out how to contact me or to see what I do online.</p>
                     <p>You can use this page just by <strong>clicking a link</strong> or <strong>copying my username.</strong></p>
                 </section>
+                <nav class="headerNav">
+                    <button class="headerButtons active" type="button" data-page="info" aria-current="page">information</button>
+                    <button class="headerButtons" type="button" data-page="projects">projects</button>
+                    <button class="headerButtons" type="button" data-page="socials">socials</button>
+                </nav>
             </header>
             <main>
                 <section class="mainInformation panel" data-page="info">
-                    <h2 id="devLog">Dev Log</h2>
+                    <h2 class="panelTitle">Dev Log</h2>
                     <article class="entry">
                         <h3><time datetime="2026-11-12">2026-11-12</time></h3>
                         <ul>
-                            <li>new tabs
+                            <li>cleanup and fixes
                                 <ul>
-                                    <li>projects page has content now</li>
-                                    <li>socials tab has content now</li>
+                                    <li>fixed the banner causing a sideways scrollbar</li>
+                                    <li>moved the nav below the panels in HTML so tab order matches what you see, and added aria-current to the first button</li>
+                                    <li>all three panel titles now share one class and are h2s so they line up</li>
+                                    <li>fixed the active tab losing its underline</li>
+                                    <li>removed dead CSS code</li>
                                 </ul>
                             </li>
-                            <li>new images
+                            <li>projects page
                                 <ul>
-                                    <li>added a banner, dont know if its gonna be permanent</li>
-                                    <li>added canny cat</li>
-                                    <li>made the cursors canny</li>
-                                </ul>
-                            </li>
-                            <li>probably final dev log for a while
-                                <ul>
-                                    <li>last day before capstone presentation in my class, so this was kinda a last check everything is done and polished run</li>
-                                    <li>removed jumps in space, finishing touches</li>
+                                    <li>project links no longer add #imgaudToLua to the URL, JS handles the click instead</li>
+                                    <li>clicked project gets a solid border (uses the id)</li>
+                                    <li>wrote an actual description for the Lua project</li>
                                 </ul>
                             </li>
                         </ul>
@@ -145,17 +142,17 @@
                 </section>
                 <section class="mainProjects panel hidden" data-page="projects">
                     <header class="projectsTop">
-                        <h3>Projects</h3>
+                        <h2 class="panelTitle">Projects</h2>
                         <nav class="projectsNav">
                             <a href="#imgaudToLua" class="projectButtons">Image/Audio to Lua</a>
                         </nav>
                     </header>
                     <article class="project" id="imgaudToLua">
-                        <p>Later on, i'll make the compiler here. The compiler will not be a standard compiler, its to convert video (or image) / audio into "beeps" and raw pixel data for a computer in a game to understand, and that language happens to be Lua.</p>
+                        <p>Planned: upload a file, preview the output, and copy the generated Lua. (this will convert audio or images/videos into raw "beeps" or pixel data for the custom Lua computer to understand.)</p>
                     </article>
                 </section>
                 <section class="mainSocials panel hidden" data-page="socials">
-                    <h3>Find me here</h3>
+                    <h2 class="panelTitle">Find me here</h2>
                     <ul class="socialsList">
                         <li class="social">
                             <h3>GitHub</h3>

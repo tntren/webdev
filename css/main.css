@@ -1,11 +1,12 @@
+.panelTitle {
+    height: var(--panel-top);
+    margin: 0 var(--inset);
+    display: flex;
+    align-items: center;
+    font-size: 1.75rem;
+}
+
 .mainInformation {
-    #devLog {
-        height: var(--panel-top);
-        margin: 0 var(--inset);
-        display: flex;
-        align-items: center;
-        font-size: 1.75rem;
-    }
     .entry {
         border: 2px dashed var(--border);
         padding: 0.5rem 1rem;
@@ -27,17 +28,8 @@
     .projectsTop {
         display: flex;
         flex-wrap: wrap;
-
         align-items: baseline;
-        align-content: center;
-        
         gap: 0 1.75rem;
-        height: var(--panel-top);
-        margin: 0 var(--inset);
-        h3 {
-            margin: 0;
-            font-size: 1.75rem;
-        }
     }
     .projectsNav {
         display: flex;
@@ -87,14 +79,6 @@
 }
 
 .mainSocials {
-    > h3 {
-        height: var(--panel-top);
-        margin: 0 var(--inset);
-        font-size: 1.75rem;
-    
-        display: flex;
-        align-items: center;
-    }
     .socialsList {
         list-style: none;
         margin: 1rem var(--inset);
@@ -108,7 +92,11 @@
         border: 2px dashed var(--border);
         padding: 0.5rem 1rem;
 
-        h3 { margin: 0.5rem 0; }
         p { margin: 0 0 0.5rem; }
+        h3 { margin: 0.5rem 0; }
     }
+}
+
+#imgaudToLua.selected {
+    border-style: solid;
 }

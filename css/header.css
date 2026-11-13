@@ -44,8 +44,7 @@
             &:hover {
                 color: var(--heading);
             }
-            &.active,
-            &:active {
+            &.active, &:active {
                 color: var(--heading);
 
                 text-decoration: underline;
